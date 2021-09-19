@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/Vazir.eot');
+    src: url('/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Vazir.woff2') format('woff2'),
+    url('/fonts/Vazir.woff') format('woff'),
+    url('/fonts/Vazir.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Vazir;
+}
+html,
+body,
+.map-container {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    text-align: right;
+}
+
+.map-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#map {
+    position: relative;
+    height: 100%;
+}
+
+.float-left{
+    float: left !important;
+}
+
+.center{
+    text-align: center !important;
+}
+
+.bg-red{
+    color: red !important;
+}
+
+.bold{
+    font-weight: bold !important;
+}
+
+.location {
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    z-index: 2;
+    width: 50px;
+    background: brown;
+    padding: 10px;
+    border-radius: 100%;
+    box-shadow: 1px 2px 13px #777;
+    text-align: center;
+}
+
+.location:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.location i{
+    font-size: 30px;
+    color: white;
+}
+
+.location i:hover{
+    color: black;
+}
+
+
+
+
+
+
