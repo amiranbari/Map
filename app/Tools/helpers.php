@@ -36,3 +36,20 @@ function startsWith($string, $startString)
     $len = strlen($startString);
     return (substr($string, 0, $len) === $startString);
 }
+
+if (!function_exists('containInString')){
+    function containInString($str, array $arr)
+    {
+        foreach($arr as $a) {
+            if (stripos($str,$a) !== false) return true;
+        }
+        return false;
+    }
+}
+
+if (!function_exists('cleanString')){
+    function cleanString(string $word)
+    {
+        return preg_replace('/[^A-Za-z0-9\-]/', '', $word);
+    }
+}

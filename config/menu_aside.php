@@ -35,6 +35,20 @@ return [
         ],
 
 
+        // Map
+        [
+            'section' => 'مدیریت مکان ها',
+        ],
+        [
+            'title' => 'مکان ها',
+            'icon' => 'media/svg/icons/Home/Home.svg',
+            'bullet' => 'line',
+            'page' => [
+                'panel/locations'
+            ]
+        ],
+
+
 
         /*[
             'title' => 'Applications',

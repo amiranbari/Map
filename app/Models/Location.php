@@ -11,6 +11,8 @@ class Location extends Model
 
     protected $guarded = [];
 
+    public $timestamps = true;
+
     const ACTIVE   = 1;
     const INACTIVE = 0;
     const STATUS   = [
@@ -21,5 +23,10 @@ class Location extends Model
     public function scopeActives($q)
     {
         return $q->where('status', self::ACTIVE);
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
     }
 }
